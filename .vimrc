@@ -1,7 +1,9 @@
 syntax on
-set tabstop=2
-set softtabstop=2 " number of spaces in tab when editing
+set tabstop=4
+set softtabstop=4 " number of spaces in tab when editing
+set shiftwidth=4
 set number " show line numbers
+set expandtab
 set relativenumber
 set laststatus=2
 set hidden
@@ -60,3 +62,12 @@ set encoding=utf8
 set guifont=DroidSansMono\ Nerd\ Font:h11
 nnoremap H gT
 nnoremap L gt
+
+" autocomplete brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O

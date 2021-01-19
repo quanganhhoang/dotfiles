@@ -1,8 +1,11 @@
+" ~/.config/nvim/init.vim
+
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 set mouse=a
 set encoding=utf8
 set guifont=<FONT_NAME>:h<FONT_SIZE>
 set guifont=DroidSansMono_Nerd_Font:h11
+set tabstop=4
 let &packpath = &runtimepath
 source ~/.vimrc
 
